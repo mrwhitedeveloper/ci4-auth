@@ -39,7 +39,7 @@ $routes->get('news/(:segment)', [NewsController::class, 'view']);
 $routes->get('news', [NewsController::class, 'index']);
 $routes->get('pages', [Pages::class, 'index']);
 $routes->get('(:segment)', [Pages::class, 'view']);
-
+$routes->get('dashboard', 'DashboardController::index',['filter' => 'auth_filter']);
 
 /*
  * --------------------------------------------------------------------
