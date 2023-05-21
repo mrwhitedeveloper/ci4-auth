@@ -1,0 +1,18 @@
+php spark make:controller Pages
+php spark make:controller AuthController
+php spark make:model UserModel
+
+php spark make:model NewsModel
+php spark make:controller NewsController
+---------------------------------
+
+
+Whoops! We seem to have hit a snag. Please try again later
+app/Config/Boot/production.php
+ini_set('display_errors', '1');
+---------------------------------
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO) 
+app/Config/Database.php
+---------------------------------
+
+app/Config/Filters.php
