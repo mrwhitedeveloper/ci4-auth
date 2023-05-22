@@ -34,12 +34,20 @@ $routes->get('/', 'Home::index');
 use App\Controllers\NewsController;
 use App\Controllers\Pages;
 
+$routes->get('login', 'AuthController::login');
+$routes->post('login', 'AuthController::login_post');
+$routes->get('register', 'AuthController::register');
+$routes->post('register', 'AuthController::register_post');
+$routes->get('logout', 'AuthController::logout');
+
+$routes->get('dashboard', 'DashboardController::index',['filter' => 'auth_filter']);
+
 $routes->match(['get', 'post'], 'news/create', [NewsController::class, 'create']);
-$routes->get('news/(:segment)', [NewsController::class, 'view']);
-$routes->get('news', [NewsController::class, 'index']);
+$routes->get('news/(:segment)', 'NewsController::view');
+$routes->get('news', 'NewsController::index');
 $routes->get('pages', [Pages::class, 'index']);
 $routes->get('(:segment)', [Pages::class, 'view']);
-$routes->get('dashboard', 'DashboardController::index',['filter' => 'auth_filter']);
+
 
 /*
  * --------------------------------------------------------------------
