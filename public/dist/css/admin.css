@@ -1,0 +1,219 @@
+.size8{
+    font-size: 9px;
+}
+.purple_text{
+    color:#6610f2;
+}
+.site-bg {
+    background: #F4AD11;
+}
+
+.site-text {
+    color: #F4AD11;
+    font-weight: 600;
+}
+
+body {
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 0.031em;
+    font-weight: 300;
+    font-style: normal;
+}
+p{
+    
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.527px;
+    font-weight: 300;
+    font-style: normal;
+}
+.site-header {
+    clear: both;
+    padding: 20px 0;
+    min-height: 110px;
+}
+
+a.custom-logo-link {
+    margin-right: 15px;
+}
+
+.site-logo {
+    background: #EBEBEB;
+    color: #333;
+    font-size: 0.9em;
+    font-weight: normal;
+    line-height: 16px;
+    margin: 0 0 0 0;
+    padding: 4px 5px;
+    position: relative;
+    z-index: 10000;
+}
+
+.home-menu {
+    background: #F4AD11;
+}
+
+ul.navbar-nav li.nav-item a.nav-link {
+    color: #fff;
+}
+
+.main-footer {
+    color: #fff;
+    font-size: 0.9em;
+    padding: 15px 0;
+    background: #F4AD11;
+    line-height: 30px;
+}
+
+.small_image {
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.theme-table1 {
+    overflow: hidden;
+    padding: 2px 3px 2px 3px;
+    vertical-align: bottom;
+    background-color: #ffffff;
+}
+
+.theme-table2 {
+    overflow: hidden;
+    padding: 2px 3px 2px 3px;
+    vertical-align: bottom;
+    background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+    font-weight: 400;
+}
+
+.body1 {
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 0.031em;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.body2 {
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.031em;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.size8 {
+    font-size: 8px;
+}
+
+.purple_text {
+    color: #6610f2;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 575.98px) {
+    #masthead {
+        display: none;
+    }
+}
+
+section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.section-bg {
+    background-color: #f8fbfe;
+}
+
+.section-cta {
+    background: #2487ce;
+    background-size: auto;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.services .info-box {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+    box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
+
+.services .info-box .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+}
+
+.services .info-box h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+}
+
+.services .info-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.first_section .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 14px 50px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background: #F4AD11;
+  }
+  .first_section h1 {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 72px;
+    color: #F4AD11;
+    font-family: "Poppins", sans-serif;
+  }
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #F4AD11;
+  }
+  .item {
+    background: #333;
+    text-align: center;
+    height: 300px;
+}
+h2 {
+    margin: 0;
+    color: #888;
+    padding-top: 80px;
+    font-size: 30px;
+}
