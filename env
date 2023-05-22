@@ -30,6 +30,8 @@
 # DATABASE
 #--------------------------------------------------------------------
 
+web_app_name="Codeigniter 4 Auth"
+
  database.default.hostname = localhost
  database.default.database = ci4_app_auth
  database.default.username = root
