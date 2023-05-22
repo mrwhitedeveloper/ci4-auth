@@ -1,3 +1,4 @@
+<div class="container">
 <h2><?= esc($title) ?></h2>
 
 <?php if (! empty($news) && is_array($news)): ?>
@@ -20,3 +21,4 @@
     <p>Unable to find any news for you.</p>
 
 <?php endif ?>
+</div>
