@@ -39,6 +39,8 @@ $routes->post('login', 'AuthController::login_post');
 $routes->get('register', 'AuthController::register');
 $routes->post('register', 'AuthController::register_post');
 $routes->get('logout', 'AuthController::logout');
+$routes->get('forgot-password', 'AuthController::forgot_password');
+$routes->post('forgot-password', 'AuthController::forgot_password_post');
 
 $routes->get('dashboard', 'DashboardController::index',['filter' => 'auth_filter']);
 
