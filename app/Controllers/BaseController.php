@@ -8,7 +8,6 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
-
 /**
  * Class BaseController
  *
@@ -21,6 +20,7 @@ use Psr\Log\LoggerInterface;
  */
 abstract class BaseController extends Controller
 {
+    protected $session;
     /**
      * Instance of the main Request object.
      *
@@ -37,12 +37,7 @@ abstract class BaseController extends Controller
      */
     protected $helpers = [];
 
-    /**
-     * Be sure to declare properties for any property fetch you initialized.
-     * The creation of dynamic property is deprecated in PHP 8.2.
-     */
-    // protected $session;
-
+    protected $viewData = [];
     /**
      * Constructor.
      */
@@ -53,6 +48,11 @@ abstract class BaseController extends Controller
 
         // Preload any models, libraries, etc, here.
 
-        // E.g.: $this->session = \Config\Services::session();
+        // E.g.: 
+        $this->session = \Config\Services::session();
+        $language=\Config\Services::Language();
+        $language->setLocale($this->session->lang);
+        $this->viewData['locale']=$this->session->lang;
+        $this->viewData['supportedLocales']=$request->config->supportedLocales;
     }
 }
