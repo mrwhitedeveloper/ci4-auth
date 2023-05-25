@@ -1,0 +1,6 @@
+
+*.log
+writable/session/*
+writable/cache/*
+writable/logs/*
+writable/uploads/*
